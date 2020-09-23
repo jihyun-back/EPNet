@@ -1,0 +1,36 @@
+
+
+
+1. 자바 버전
+
+2. 라이브러리
+	- MyBatis
+	- Tiles
+	- AOP
+	- lombok
+	- log4j
+	- File Upload
+	- JDBC
+	- css/js/bootstrap
+	- 차트.jar(나중에)
+	
+	
+3. web.xml
+	- 인코딩
+	- 확장자
+	
+4. root-context.xml
+	- MyBatis
+	- Transaction(namespace>tx)
+	- File Upload
+	- log4j
+
+5. log4j.xml
+
+6. servlet-context.xml 
+	- AOP
+	- Tiles ViewResolver 
+	
+7. webapp/files 폴더 생성
+
+8. /WEB-INF/mybatis.xml, /WEB-INF/tiles.xml
