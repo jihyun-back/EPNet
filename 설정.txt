@@ -30,6 +30,7 @@
 6. servlet-context.xml 
 	- AOP
 	- Tiles ViewResolver 
+	- <context:component-scan base-package="com.test.*"/>
 	
 7. webapp/files 폴더 생성
 

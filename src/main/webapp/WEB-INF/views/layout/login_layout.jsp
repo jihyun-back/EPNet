@@ -10,7 +10,7 @@
 </head>
 <body>
 	<main>
-	<tiles:insertAttribute name="login"></tiles:insertAttribute>
+		<tiles:insertAttribute name="login"></tiles:insertAttribute>
 	</main>
 </body>
 </html>

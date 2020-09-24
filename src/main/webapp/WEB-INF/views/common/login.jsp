@@ -2,8 +2,8 @@
 	pageEncoding="UTF-8"%>
 
 
-<link rel="stylesheet" href="/common/resources/css/main_admin.css">
-<link rel="stylesheet" href="/common/resources/css/login_admin.css">
+
+<link rel="stylesheet" href="/common/resources/css/login.css">
 
 
 

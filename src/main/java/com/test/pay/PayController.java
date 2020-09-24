@@ -1,4 +1,4 @@
-package com.test.common;
+package com.test.pay;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class TestController {
+public class PayController {
 
-	@RequestMapping(value = "/test.action", method = { RequestMethod.GET })
+	@RequestMapping(value = "/pay/test.action", method = { RequestMethod.GET })
 	public String test(HttpServletRequest request, HttpServletResponse response) {
 
 		
-		
-		return "test";
+
+		return "pay.test";
 	}
 }
