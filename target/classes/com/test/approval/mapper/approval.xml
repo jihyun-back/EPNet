@@ -6,25 +6,5 @@
 <!-- MyBatis 특징 - SQL *.java에서 작성하지 않고 별도의 *.xml에서 작성/관리한다. - SQL을 관리하는 XML을 
 	매퍼(Mapper)라고 한다. -->
 <mapper namespace="board">
-	<select id="clist" resultType="cdto">
-		select * from tblCategory order by
-		seq asc
-	</select>
-	<insert id="add" parameterType="bdto">
-		insert into tblCode values
-		(seqCode.nextval, #{subject},#{content},#{filename},default,#{cseq})
-	</insert>
-	<select id="list" resultType="bdto">
-		select seq, subject, regdate, cseq,
-			(select name from tblCategory where seq = c.cseq) as cname, 
-			(select type from tblCategory where seq = c.cseq) as ctype
-		from tblCode c order by seq asc
-	</select>
-	<select id="get" parameterType="String" resultType="bdto">
-		select
-			seq, subject, regdate, cseq, content, filename,
-			(select name from tblCategory where seq = c.cseq) as cname, 
-			(select type from tblCategory where seq = c.cseq) as ctype
-		from tblCode c where seq = #{seq} 
-	</select>
+
 </mapper>
