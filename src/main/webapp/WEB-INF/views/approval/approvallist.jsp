@@ -8,6 +8,6 @@
 <link rel="stylesheet" href="/EPNet/resources/css/main.css">
 <title>Insert title here</title>
 </head>
-<body>테스트
+<body>
 </body>
 </html>
