@@ -10,4 +10,13 @@
 
 <configuration>
 	
+	<typeAliases>
+		<!-- MyBatis(매퍼)에서 자주 사용하는 자료형의 별칭 -->
+		<typeAlias type="com.test.pay.PayDTO" alias="pdto"/>
+	</typeAliases>
+	
+	<mappers>
+		<mapper resource="com/test/pay/mapper/pay.xml" />
+	</mappers>
+	
 </configuration>

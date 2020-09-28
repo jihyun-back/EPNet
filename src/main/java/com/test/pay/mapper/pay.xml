@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+<mapper namespace="pay">
+
+	<select id="list" resultType="pdto" parameterType="map">
+		select * from (
+		select a.* , rownum as rnum from
+		(select e.name as name , d.name as department , ps.money as money , m.type as type , ps.content as content , ps.time as time  
+		from
+		    tbl_employee e 
+		        inner join tbl_pay_spend ps 
+		            on e.seq = ps.emp_seq
+		                inner join tbl_money m --경비
+		                    on m.seq = ps.mon_seq
+		                        inner join tbl_team t 
+		                             on e.team_seq = t.seq
+		                                inner  join tbl_department d 
+		                                    on t.dep_seq = d.seq
+		                                          where e.seq = 10
+		                                            order by ps.time asc) a order by rownum desc)
+		                                            	<!-- <![CDATA[
+		                                            		where rnum <= #{end} and rnum >= #{begin}
+		                                            	]]>  -->
+		                                            	where rnum &gt;= #{end} and rnum &lt;= #{begin} 
+		                                            	 <!-- where rnum &gt;= #{begin} and rnum &lt;= #{end}  -->
+	</select>
+	
+	
+	<select id="totalCount" resultType="String">
+		select count(*) as totalCount from
+	    tbl_employee e --사원
+	        inner join tbl_pay_spend ps 
+	            on e.seq = ps.emp_seq
+	                inner join tbl_money m 
+	                    on m.seq = ps.mon_seq
+	                        inner join tbl_team t 
+	                             on e.team_seq = t.seq
+	                                inner  join tbl_department d 
+	                                    on t.dep_seq = d.seq
+	                                          where e.seq = 10
+	</select>
+
+</mapper>   

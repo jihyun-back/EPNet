@@ -14,8 +14,8 @@
 		<property name="driverClassName"
 			value="oracle.jdbc.driver.OracleDriver"></property>
 		<property name="url"
-			value="jdbc:oracle:thin:@localhost:1521:xe"></property>
-		<property name="username" value="hr"></property>
+			value="jdbc:oracle:thin:@bangtranet.cb9lxjaxutr4.ap-northeast-2.rds.amazonaws.com:1521:ORCL"></property>
+		<property name="username" value="admin"></property>
 		<property name="password" value="java1234"></property>
 	</bean>
 
