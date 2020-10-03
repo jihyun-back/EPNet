@@ -2,9 +2,10 @@
     pageEncoding="UTF-8"%>
     
 
-<link rel="stylesheet" href="/epnet/resources/css/bootstrap.css">
-<link rel="stylesheet" href="/epnet/resources/css/main.css">
-<script src="/epnet/resources/js/bootstrap.js"></script>
 <script src="/epnet/resources/js/jquery-1.12.4.js"></script>
+<script src="/epnet/resources/js/jquery-3.5.1.js"></script>
 <script src="/epnet/resources/js/jquery-ui.js"></script>
 <script src="/epnet/resources/js/highcharts.js"></script>
+<script src="/epnet/resources/js/bootstrap.js"></script>
+<link rel="stylesheet" href="/epnet/resources/css/main.css">
+<link rel="stylesheet" href="/epnet/resources/css/bootstrap.css">

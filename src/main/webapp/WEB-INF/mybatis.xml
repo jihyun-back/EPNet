@@ -15,9 +15,6 @@
 		<typeAlias type="com.test.pay.PayDTO" alias="pdto"/>
 	</typeAliases>
 	
-	<mappers>
-		<mapper resource="com/test/**/mapper/*.xml" />
-	</mappers> 
 	
 	
 </configuration>

@@ -116,36 +116,6 @@
 	text-align: center;
 }
 
-.tbl > thead > tr > th:nth-child(2) {
-	width: 170px;
-	text-align: center;
-}
-
-.tbl > thead > tr > th:nth-child(3) {
-	width: 170px;
-	text-align: center;
-}
-
-.tbl > thead > tr > th:nth-child(4) {
-	width: 170px;
-	text-align: center;
-}
-
-.tbl > thead > tr > th:nth-child(5) {
-	width: 170px;
-	text-align: center;
-}
-
-.tbl > thead > tr > th:nth-child(6) {
-	width: 170px;
-	text-align: center;
-}
-
-.tbl > thead > tr > th:nth-child(7) {
-	width: 170px;
-	text-align: center;
-}
-
 
 .tbl > tbody > tr > td:nth-child(1) {
 	width: 170px;

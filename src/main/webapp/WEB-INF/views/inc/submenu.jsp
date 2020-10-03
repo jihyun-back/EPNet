@@ -31,7 +31,9 @@
 			<li>
 				<div class="mainmenu">| 결재</div>
 				<ul class="sub">
-					<li><a href="#">· 인테리어 게시글 관리</a></li>
+					<li><a href="#">. 받은 결재</a></li>
+					<li><a href="#">. 보낸 결재</a></li>
+					<li><a href="#">. 결재 작성</a></li>
 
 				</ul>
 
