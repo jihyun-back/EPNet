@@ -15,10 +15,6 @@
 		<typeAlias type="com.test.pay.PayDTO" alias="pdto"/>
 	</typeAliases>
 	
-<<<<<<< HEAD
-=======
-
->>>>>>> 8f2f5d56ffeb2a6d4755e424bc0cb74df9ec2ccc
 	
 	
 </configuration>

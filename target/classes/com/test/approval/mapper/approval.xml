@@ -5,21 +5,16 @@
 
 <!-- MyBatis 특징 - SQL *.java에서 작성하지 않고 별도의 *.xml에서 작성/관리한다. - SQL을 관리하는 XML을 
 	매퍼(Mapper)라고 한다. -->
-<<<<<<< HEAD
 <mapper namespace="approval">
 
 	<select id="totalcount" resultType="Integer"  parameterType="String">
 		select count(*) from TBL_TYPE a INNER join TBL_APPROVAL b on a.seq =b.typ_seq INNER join TBL_EMPLOYEE c on b.emp_seq = c.seq where c.seq = #{seq}  
 	</select>
 	
-	<select id="list" parameterType="String" resultType="com.test.approval.ApprovalDTO">
-		select rownum as seq,e.* from (select c.id as id,c.name as name,a.typename as title,b.requestdate as day from TBL_TYPE a
+	<select id="list" parameterType="java.util.HashMap" resultType="com.test.approval.ApprovalDTO">
+		select rownum as seq,e.* from (select c.id as id,c.name as name,a.typename as type,b.reason title,b.requestdate as day from TBL_TYPE a
     INNER join TBL_APPROVAL b on a.seq =b.typ_seq
         INNER join TBL_EMPLOYEE c on b.emp_seq = c.seq
             where c.seq =#{seq} ORDER by b.requestdate)e
 	</select>
-=======
-<mapper namespace="board">
-	
->>>>>>> 8f2f5d56ffeb2a6d4755e424bc0cb74df9ec2ccc
 </mapper>

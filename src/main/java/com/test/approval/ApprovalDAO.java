@@ -1,5 +1,6 @@
 package com.test.approval;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.mybatis.spring.SqlSessionTemplate;
@@ -18,9 +19,9 @@ public class ApprovalDAO implements IApproval {
 	}
 
 	@Override
-	public List<ApprovalDTO> list(String seq) {
+	public List<ApprovalDTO> list(HashMap<String, String> hash) {
 		// TODO Auto-generated method stub
-		return template.selectList("approval.list",seq);
+		return template.selectList("approval.list",hash);
 	}
 
 }

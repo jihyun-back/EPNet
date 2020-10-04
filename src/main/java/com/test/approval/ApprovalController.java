@@ -1,5 +1,6 @@
 package com.test.approval;
 
+import java.util.HashMap;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -26,12 +27,20 @@ public class ApprovalController {
 		}
 		
 		String seq = (String)session.getAttribute("seq");
+		String type = (String)request.getAttribute("type");
+		if(type == null) {
+			type = "전체";
+		}
 		
 		int totalcount = dao.getTotalCount(seq);
+		HashMap<String, String> hash = new HashMap<String, String>();
+		hash.put("seq", seq);
+		hash.put("type", type);
+		List <ApprovalDTO> list = dao.list(hash);
 		
-		List <ApprovalDTO> list = dao.list(seq);
 		
 		request.setAttribute("totalcount", totalcount);
+		request.setAttribute("list", list);
 		
 		return "approval.approvallist";
 	}
